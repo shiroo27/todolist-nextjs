@@ -3,7 +3,7 @@ import React from 'react';
 import { Table, Checkbox } from 'antd';
 import useStore from '../store';
 
-const TodoTable = ({ todos }) => {
+export const TodoTable = ({ todos }) => {
   const toggleTodo = useStore((state) => state.toggleTodo); // Get toggleTodo function from the store
 
   const columns = [
@@ -42,5 +42,3 @@ const TodoTable = ({ todos }) => {
 
   );
 };
-
-export default TodoTable;
