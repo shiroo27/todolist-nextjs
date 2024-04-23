@@ -13,7 +13,7 @@ interface StoreState {
   toggleTodo: (id: number) => void;
 }
 
-export const useStore = create<StoreState>((set) => ({
+const useStore = create<StoreState>((set) => ({
   todos: [],
   addTodo: (todo) =>
     set((state) => ({
@@ -26,3 +26,5 @@ export const useStore = create<StoreState>((set) => ({
         ),
       })),
   }));
+
+export default useStore;

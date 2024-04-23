@@ -9,7 +9,7 @@ const Home = () => {
   const todos = useStore((state) => state.todos); // get todos from the store.js...
 
   return (
-  <div className="items-center justify-between">
+  <div>
     <h1>Todo App</h1>
     <TodoInput />
     <TodoTable todos={todos}/>

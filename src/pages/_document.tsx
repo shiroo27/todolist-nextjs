@@ -3,7 +3,7 @@ import { createCache, extractStyle, StyleProvider } from '@ant-design/cssinjs';
 import Document, { Head, Html, Main, NextScript } from 'next/document.js';
 import type { DocumentContext } from 'next/document.d.ts';
 
-export const MyDocument = () => (
+const MyDocument = () => (
   <Html lang="en">
     <Head />
     <body>
@@ -37,3 +37,5 @@ MyDocument.getInitialProps = async (ctx: DocumentContext) => {
     ),
   };
 };
+
+export default MyDocument;
