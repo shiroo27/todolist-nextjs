@@ -34,7 +34,7 @@ const TodoInput = () => {
     <div>
       <Form {...formItemLayout} variant="filled" style={{ maxWidth: 600 }}>
       <Form.Item label="Input" name="Input" rules={[{ required: true, message: 'Input required' }]}>
-      <Input value={text} onChange={(e) => setText(e.target.value)} placeholder="Enter a new todo" suffix={<LuListTodo />}/>
+      <Input value={text} onChange={(e) => setText(e.target.value)} placeholder="Enter a new todo" suffix={<LuListTodo style={{ color: 'gray' }} />}/>
       </Form.Item>
       <Form.Item label="DatePicker" name="DatePicker" rules={[{ required: true, message: 'Date required'}]}>
       <DatePicker value={date} onChange={(value) => setDate(value)} style={{ marginRight: 8 }}/>
