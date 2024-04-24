@@ -4,7 +4,6 @@ import React, { useState } from 'react';
 import { Input, Button, DatePicker, Form } from 'antd';
 import useStore from '@/app/store';
 import { LuListTodo } from 'react-icons/lu';
-import { MdDateRange } from 'react-icons/md';
 
 const TodoInput = () => {
   const [text, setText] = useState('');
