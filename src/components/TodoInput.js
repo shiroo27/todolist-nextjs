@@ -3,6 +3,8 @@
 import React, { useState } from 'react';
 import { Input, Button, DatePicker, Form } from 'antd';
 import useStore from '@/app/store';
+import { LuListTodo } from 'react-icons/lu';
+import { MdDateRange } from 'react-icons/md';
 
 const TodoInput = () => {
   const [text, setText] = useState('');
@@ -32,9 +34,9 @@ const TodoInput = () => {
     <div>
       <Form {...formItemLayout} variant="filled" style={{ maxWidth: 600 }}>
       <Form.Item label="Input" name="Input" rules={[{ required: true, message: 'Input required' }]}>
-      <Input value={text} onChange={(e) => setText(e.target.value)} placeholder="Enter a new todo"/>
+      <Input value={text} onChange={(e) => setText(e.target.value)} placeholder="Enter a new todo" suffix={<LuListTodo />}/>
       </Form.Item>
-      <Form.Item label="DatePicker" name="DatePicker" rules={[{ required: true, message: 'Date required' }]}>
+      <Form.Item label="DatePicker" name="DatePicker" rules={[{ required: true, message: 'Date required'}]}>
       <DatePicker value={date} onChange={(value) => setDate(value)} style={{ marginRight: 8 }}/>
       </Form.Item>
       <Form.Item wrapperCol={{ offset: 6, span: 16 }}>
