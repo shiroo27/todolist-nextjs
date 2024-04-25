@@ -39,7 +39,7 @@ const TodoInput = () => {
       <DatePicker value={date} onChange={(value) => setDate(value)} style={{ marginRight: 8 }}/>
       </Form.Item>
       <Form.Item wrapperCol={{ offset: 6, span: 16 }}>
-      <Button type="primary" onClick={handleAddTodo}>
+      <Button type="secondary" onClick={handleAddTodo}>
         Add Todo
       </Button>
       </Form.Item>
