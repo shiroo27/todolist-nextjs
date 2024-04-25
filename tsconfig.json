@@ -21,6 +21,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/components/TodoList.jsx", "src/components/TodoInput.jsx", "src/pages/todo.js", "src/pages/app.js", "src/components/TodoInput.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/components/TodoInput.jsx", "src/pages/todo.js", "src/pages/app.js", "src/components/TodoInput.tsx", "src/components/TodoTable.js"],
   "exclude": ["node_modules"]
 }
